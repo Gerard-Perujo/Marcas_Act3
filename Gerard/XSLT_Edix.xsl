@@ -4,6 +4,7 @@
         <html>
             <head>
                 <title>Escuela Edix</title>
+                <link rel="stylesheet" href="Edix.css"></link>
             </head>
             <header>
                 <a href="https://www.edix.com/es/" target="_blank">
@@ -18,11 +19,9 @@
             </header>
             <body>
                 <section>
-                    <table>
+                    <table class="profesores">
                         <thead>
-                            <tr>
-                                <th>Profesorado</th>
-                            </tr>
+                            <tr><th colspan="2" class="profesorado">Profesorado</th></tr>
                             <tr>
                                 <th>Id_Profesor</th>
                                 <th>Nombre Profesor</th>
@@ -37,10 +36,10 @@
                             </xsl:for-each>
                         </tbody>
                     </table>
-                    <table>
+                    <table class="cursos">
                         <thead>
                             <tr>
-                                <th>Cursos que Imparte el Centro</th>
+                                <th colspan="4" class="imparten">Cursos que Imparte el Centro</th>
                             </tr>
                             <tr>
                                 <th>Cursos</th>
@@ -66,38 +65,50 @@
                         </tbody>
                     </table>
                 </section>
-                <section>
+                <section class="Equipo">
                     <h1>Nuestro Equipo</h1>
-                    <ol>
-                       <li> Director: <xsl:value-of select="ite/director/nombre"/>
-                           <xsl:value-of select="ite/director/despacho"/>
-                       </li>
+                    <ol class="lista">
+                        <li>Director: <xsl:value-of select="ite/director/nombre"/>
+                            <xsl:value-of select="ite/director/despacho"/>
+                        </li>
                        <li> Jefe de Estudios: <xsl:value-of select="ite/jefe_estudios/nombre"/>
                             <xsl:value-of select="ite/jefe_estudios/despacho"/>
+                            
                        </li>
                     </ol>
+                    <div class="directora">
+                        <img  src="img\Directora.jpg"/>
+                    </div>
+                    <div class="jefeEstudios">
+                        <img  src="img\jefe_estudios.jpg"/>
+                    </div>
+                    
                 </section>
             </body>
             <footer>
                 <h2>Para recibir información sobre algun curso contacte con nosotros</h2>
                 <form action="procesarPeticion.jsp" method="post">
-                    <label for="nombre">Nombre: </label>
-                    <input id="nombre" type="text" name="nombre"/><br/><br/>
-                    <label for="1apellido">Primer Apellido: </label>
-                    <input id="1apellido" type="text" name="1apellido"/><br/><br/>
-                    <label for="2apellido">Segundo Apellido: </label>
-                    <input id="2apellido" type="text" name="2apellido"/><br/><br/>
-                    <label for="email">Email: </label>
-                    <input id="email" type="email" name="email"/><br/><br/>
-                    <label for="telefono">Telefono: </label>
-                    <input id="telefono" type="telefono" name="telefono"/><br/><br/>
+                    <div class="formulario">
+                        <label for="nombre">Nombre: </label>
+                        <input id="nombre" type="text" name="nombre"/><br/><br/>
+                        <label for="1apellido">Primer Apellido: </label>
+                        <input id="1apellido" type="text" name="1apellido"/><br/><br/>
+                        <label for="2apellido">Segundo Apellido: </label>
+                        <input id="2apellido" type="text" name="2apellido"/><br/><br/>
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email"/><br/><br/>
+                        <label for="telefono">Telefono: </label>
+                        <input id="telefono" type="telefono" name="telefono"/><br/><br/>
+                        </div>
                     <label for="curso">Selecciona Curso </label>
                     <select name="curso">
                         <option value="asir">ASIR</option>
                         <option value="daw">DAW</option>
                         <option value="dam">DAM</option>
                     </select><br/><br/>
-                    <input type="submit" value="Pedir Informacion"/>
+                    <div class="enviar">
+                        <input type="submit" value="Pedir Informacion"/>
+                    </div>
                 </form>
             </footer>
         </html>

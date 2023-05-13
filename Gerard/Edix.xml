@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="XSLT_Edix.xsl" type="text/xsl"?>
+<!--<?xml-stylesheet href="XSLT_transform" type="text/xsl"?>-->
 <ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
     <empresa>Proeduca</empresa>
     <telefono>+34 91 787 39 91</telefono>
