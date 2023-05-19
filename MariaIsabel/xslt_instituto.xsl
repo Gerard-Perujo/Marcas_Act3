@@ -3,12 +3,11 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title><xsl:value-of select="ite[@nombre]"/></title>
                 <link rel="stylesheet" href="edix1.css" />
             </head>
 
             <header>
-            <h1>EDIX</h1>
+            <h1><xsl:value-of select="ite/@nombre"/></h1>
             <h2>Ciclos superiores a distancia</h2>
             </header>
 
@@ -44,11 +43,12 @@
                                         <td><xsl:value-of select="@id"/></td>
                                         <td><xsl:value-of select="nombre"/></td>
                                         <td><xsl:value-of select="grado"/></td>
-                                        <td><xsl:value-of select="decretoTitulo"/></td>
+                                        <td><xsl:value-of select="decretoTitulo/@año"/></td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                     </table>
+                    <p>Para saber más <a href="https://institutotecnologico.edix.com">bucea por la web</a></p>
                     </article>
                     <br></br>
 
@@ -62,7 +62,7 @@
                             <caption>Claustro de profesores</caption>
                             <thead>
                                 <tr>
-                                    <th>Número</th>
+                                    <th>Nº</th>
                                     <th>Nombre</th>
                                 </tr>
                             </thead>
@@ -168,18 +168,10 @@
             </body>
 
             <footer>
-                <section>
-                    <h3>Información general de contacto</h3>
-                    <p><xsl:value-of select="ite/empresa"/></p>
-                    <p><xsl:value-of select="ite/telefono"/></p>
-                    <a href="https://institutotecnologico.edix.com"/>
-                </section>
-                <br></br>
-
-                <section>
-                    <h4>Grupo Proeduca</h4>
-                    <a href="https://www.grupoproeduca.com/"/>
-                </section>
+                <h3>Información general de contacto</h3>
+                <p><xsl:value-of select="ite/empresa"/></p>
+                <p><xsl:value-of select="ite/telefono"/></p>
+                <a href="https://institutotecnologico.edix.com">Web del grupo</a>
             </footer>
         </html>
     </xsl:template>
