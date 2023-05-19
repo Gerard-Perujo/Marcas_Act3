@@ -1,3 +1,12 @@
-head{
-    background-color: aquamarine;
+header{
+    text-align: center;
+}
+
+body{
+    background-image: url("/MariaIsabel/img/arco.jpg");
+    background-size: cover;
+}
+
+fieldset{
+    background-color: orange;
 }

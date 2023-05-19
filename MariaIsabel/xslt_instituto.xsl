@@ -3,6 +3,7 @@
     <xsl:template match="/">
         <html>
             <head>
+                <title>EDIX</title>
                 <link rel="stylesheet" href="edix1.css" />
             </head>
 
