@@ -2,16 +2,18 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
+            <!-- .......................Título de página y cabecera........................................... -->
             <head>
                 <title>EDIX</title>
                 <link rel="stylesheet" href="edix1.css" />
             </head>
-
+            
             <header>
             <h1><b><xsl:value-of select="ite/@nombre"/></b></h1>
             <h2><b>Ciclos superiores a distancia</b></h2>
             </header>
 
+            <!-- .......................Texto, tablas y fotografías............................................-->
             <body>
                 <h2><marquee>🚀Adelántate al futuro en 2 años🚀</marquee></h2>
                 <br></br>
@@ -26,9 +28,7 @@
                     
                     <br></br>  
                     <img class ="foto2" src="img/vm.png" alt="Programando"/>  
-                    <div class="resumen"><p>A continuación se expone un resumen visual de nuestra oferta formativa:</p></div>
-                    
-                    
+                    <div class="resumen"><p>A continuación se expone un resumen visual de nuestra oferta formativa:</p></div>                                    
                 </section>
                 <br></br>
 
@@ -98,16 +98,8 @@
                 <br></br>
                 <br></br>
                 <br></br>
-
-                
-                    
-                
-
-                <!-- .......................................................................................................
-                ............................................................................................................
-                ............................................................................................................
-                ............................................................................................................ -->
-
+                                                    
+                <!-- ..........................................Formulario................................................. -->
                 <section>
                     <p class="contactus">Si deseas recibir más información, ponte en contacto con nosotros:</p>
                     <h2 class="formulario">💡Formulario de contacto</h2>
@@ -172,6 +164,7 @@
                 <div class="barra"></div>
             </body>
 
+            <!-- ................................Pie de página.............................................-->
             <footer>
                 <h3><u>Información general</u></h3>
                 <p>💼<xsl:value-of select="ite/empresa"/></p>
