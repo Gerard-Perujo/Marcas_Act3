@@ -8,28 +8,34 @@
             </head>
 
             <header>
-            <h1><xsl:value-of select="ite/@nombre"/></h1>
-            <h2>Ciclos superiores a distancia</h2>
+            <h1><b><xsl:value-of select="ite/@nombre"/></b></h1>
+            <h2><b>Ciclos superiores a distancia</b></h2>
             </header>
 
             <body>
-                <h2>El futuro en 2 años</h2>
+                <h2><marquee>🚀Adelántate al futuro en 2 años🚀</marquee></h2>
                 <br></br>
                 <section>
-                    <p>
-                        Cada año que pasa es más importante contar con una formación sólida en las nuevas tecnologías.
-                        Ante la creciente demanda de profesionales formados en este sector, cursar uno de los siguientes
-                        ciclos formativos será un acierto seguro. 
-                    </p>
-                    <br></br>
-                    <p>A continuación se expone un resumen visual de nuestra oferta formativa</p>
+                    <div class="primerparr">
+                        <p><i>
+                            Cada año que pasa es más importante contar con una formación sólida en las nuevas tecnologías.
+                            Ante la creciente demanda de profesionales formados en este sector, cursar uno de los siguientes
+                            ciclos formativos será un acierto seguro. 
+                        </i></p>
+                    </div>
+                    
+                    <br></br>  
+                    <img class ="foto2" src="img/vm.png" alt="Programando"/>  
+                    <div class="resumen"><p>A continuación se expone un resumen visual de nuestra oferta formativa:</p></div>
+                    
+                    
                 </section>
                 <br></br>
 
                 <section>
                     <article>
                         <table border="1">
-                            <caption>Ciclos superiores ofertados</caption>
+                            <caption><b>Ciclos superiores ofertados</b></caption>
                             <thead>
                                 <tr>
                                     <th>Siglas</th>
@@ -49,18 +55,26 @@
                                 </xsl:for-each>
                             </tbody>
                     </table>
-                    <p>Para saber más <a href="https://institutotecnologico.edix.com">bucea por la web</a></p>
+                    <p class="enlace1">Para saber más <a href="https://institutotecnologico.edix.com">bucea por la web</a></p>
                     </article>
+                    <br></br>
                     <br></br>
 
                     <article>
-                        <p>
-                            La calidad de un curso no reside exclusivamente en su contenido, 
-                            sino también en el compromiso del profesorado que te acompaña.
-                        </p>
+                        <div class="primerparr">
+                            <p>
+                                <i>                                    
+                                    ~~ La calidad de un curso no reside exclusivamente en su contenido, 
+                                    sino también en el compromiso del profesorado que te acompaña ~~                                    
+                                </i>
+                            </p>
+                        </div>
                         <br></br>
-                        <table border="1">
-                            <caption>Claustro de profesores</caption>
+                        <img class ="foto1" src="img/desweb2.png" alt="Infografía lenguajes de programación"/>
+                        <br></br>
+                        <table class="tabla2" border="1">
+                            <br></br>
+                            <caption><b>Claustro</b></caption>
                             <thead>
                                 <tr>
                                     <th>Nº</th>
@@ -79,26 +93,15 @@
                     </article>
                 </section>
                 <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
 
-                <section>
-                    <p>Además, siempre contarás con el apoyo de dirección y jefatura de estudios</p>
-                    <article>
-                        <h3>Dirección</h3>
-                        <ol>
-                            <li><xsl:value-of select="ite/director/nombre"/></li>
-                            <li><xsl:value-of select="ite/director/despacho"/></li>
-                        </ol>
-                    </article>
-                    <br></br>
-
-                    <article>
-                        <h3>Jefatura de estudios</h3>
-                        <ol>
-                            <li><xsl:value-of select="ite/jefe_estudios/nombre"/></li>
-                            <li><xsl:value-of select="ite/jefe_estudios/despacho"/></li>
-                        </ol>
-                    </article>
-                </section>
+                
+                    
+                
 
                 <!-- .......................................................................................................
                 ............................................................................................................
@@ -106,11 +109,10 @@
                 ............................................................................................................ -->
 
                 <section>
-                    <p>Si deseas recibir más información, ponte en contacto con nosotros:</p>
-                    <h1>Formulario</h1>
+                    <p class="contactus">Si deseas recibir más información, ponte en contacto con nosotros:</p>
+                    <h2 class="formulario">💡Formulario de contacto</h2>
                     <form action="procesarPeticion.jsp" method="post">
                         <fieldset>
-                            <legend>Datos personales</legend>
                             <label for="nombre">Nombre: </label>
                             <input id="nombre" type="text" name="nombre"/>
                             <br/>
@@ -166,14 +168,37 @@
                         </fieldset>
                     </form>
                 </section>
+                <br></br>
+                <div class="barra"></div>
             </body>
 
             <footer>
-                <h3>Información general de contacto</h3>
-                <p><xsl:value-of select="ite/empresa"/></p>
-                <p><xsl:value-of select="ite/telefono"/></p>
-                <a href="https://institutotecnologico.edix.com">Web del grupo</a>
+                <h3><u>Información general</u></h3>
+                <p>💼<xsl:value-of select="ite/empresa"/></p>
+                <p>📞<xsl:value-of select="ite/telefono"/></p>
+                <a href="https://institutotecnologico.edix.com">🖥️ Web del grupo</a>
+                <br></br>
+                <br></br>
+
+                <div class="lista">
+                        <article>
+                            <h3 class="jefes"><i>Dirección</i></h3>
+                            <ol>
+                                <li><xsl:value-of select="ite/director/nombre"/></li>
+                                <li><xsl:value-of select="ite/director/despacho"/></li>
+                            </ol>
+                        </article>
+                        <br></br>
+
+                        <article>
+                            <h3 class="jefes"><i>Jefatura de estudios</i></h3>
+                            <ol>
+                                <li><xsl:value-of select="ite/jefe_estudios/nombre"/></li>
+                                <li><xsl:value-of select="ite/jefe_estudios/despacho"/></li>
+                            </ol>
+                        </article>
+                    </div>
             </footer>
         </html>
     </xsl:template>
-</xsl:stylesheet>
+</xsl:stylesheet>  
