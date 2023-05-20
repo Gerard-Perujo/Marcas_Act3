@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<?xml-stylesheet href="xslt_instituto.xsl" type="text/xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Requerimiento 1: --> 
+<!-- <?xml-stylesheet href="xslt_instituto.xsl" type="text/xsl"?> -->
+
+<!-- Requerimiento 2: -->
+<?xml-stylesheet type="text/xsl" href="requerimiento2.xsl"?>
 <ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
     <empresa>Proeduca</empresa>
 
@@ -35,7 +40,7 @@
     <jefe_estudios>
         <nombre>Dani</nombre>
         <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
-    </jefe_estudios>
+    </jefe_estudios>  
 
     <ciclos>
         <ciclo id="ASIR">

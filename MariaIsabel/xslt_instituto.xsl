@@ -32,7 +32,7 @@
                     <img class ="foto2" src="img/vm.png" alt="Programando"/>  
                     <div class="resumen"><p>A continuación se expone un resumen visual de nuestra oferta formativa:</p></div>                                    
                 </section>
-                <br></br>
+                <br></br> 
 
                 <section>
                     <article>
@@ -70,7 +70,7 @@
                                     sino también en el compromiso del profesorado que te acompaña ~~                                    
                                 </i>
                             </p>
-                        </div>
+                        </div> 
                         <br></br>
                         <img class ="foto1" src="img/desweb2.png" alt="Infografía lenguajes de programación"/>
                         <br></br>
@@ -100,7 +100,7 @@
                 <br></br>
                 <br></br>
                 <br></br>
-                                                    
+                                                     
                 <!-- ..........................................Formulario................................................. -->
                 <section>
                     <p class="contactus">Si deseas recibir más información, ponte en contacto con nosotros:</p>
@@ -138,7 +138,7 @@
                                 <option value="cisup">Ciclo Formativo de Grado Superior</option>
                                 <option value="superior">Educación superior</option>
                             </select>
-                            <br/>
+                            <br/> 
 
                             <label for="interes">Ciclo formativo de interés: </label>
                             <select name="interes">
@@ -174,7 +174,7 @@
                 <a href="https://institutotecnologico.edix.com">🖥️ Web del grupo</a>
                 <br></br>
                 <br></br>
-
+ 
                 <div class="lista">
                         <article>
                             <h3 class="jefes"><i>Dirección</i></h3>
