@@ -19,11 +19,13 @@
                 <br></br>
                 <section>
                     <div class="primerparr">
-                        <p><i>
-                            Cada año que pasa es más importante contar con una formación sólida en las nuevas tecnologías.
-                            Ante la creciente demanda de profesionales formados en este sector, cursar uno de los siguientes
-                            ciclos formativos será un acierto seguro. 
-                        </i></p>
+                        <p>
+                            <i>
+                                Cada año que pasa es más importante contar con una formación sólida en las nuevas tecnologías.
+                                Ante la creciente demanda de profesionales formados en este sector, cursar uno de los siguientes
+                                ciclos formativos será un acierto seguro. 
+                            </i>
+                        </p>
                     </div>
                     
                     <br></br>  

@@ -1,3 +1,4 @@
+/* ............................Cabecera y cuerpo de la página en general.......................................*/
 header{
     text-align: center;
     background-color: rgb(250, 207, 114);
@@ -10,42 +11,13 @@ body{
     float:left;
 }
 
-fieldset{
-    background-color: rgb(250, 207, 114);
-}
-
-footer{
+/* ............................................Primera sección...................................................*/
+.primerparr{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-}
-
-table{
-    background-color: aliceblue;
-    margin-left: 6%;
-    text-align: center;
-    padding: 1px;
-}
-
-form{
-    width: 40%;
-    margin-left: 26.5%;
-}
-
-.formulario{
-    margin-left: 39%;
-}
-
-.barra{
-    width: 70%;
-    height: 1.5px;
-    background-color: black;
-    margin-left: 15%;
-}
-
-.foto1{
-    width: 35.3%;
-    height: 35.3%;
-    float: right;
-    margin-right: 6%;
 }
 
 .foto2{
@@ -55,39 +27,17 @@ form{
     margin-right: 6%;
 }
 
-.primerparr{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-}
-
-
-.enlace1{
-    margin-left: 6%;
-    font-size: 18px;
-}
-
-
-
-ol{
-    list-style-type: none;
-}
-
-.lista{
-    margin-left: 32%;
-    
-    display:flex;
-}
-
-.jefes{
-    margin-left: 13%;
-}
-
 .resumen{
     font-size: 18px;
     margin-left: 6%;
+}
+
+/* ............................................Más texto y zona de tablas...................................................*/
+table{
+    background-color: aliceblue;
+    margin-left: 6%;
+    text-align: center;
+    padding: 1px;
 }
 
 caption{
@@ -95,17 +45,20 @@ caption{
     font-family: sans-serif;
 }
 
-/*
-.calidad{
-    font-size: 20px;
-    margin-left: 3%;
-    text-align: center;
-    font-family: serif;
-}*/
-
-
 th{
     background-color: orange;
+}
+
+.enlace1{
+    margin-left: 6%;
+    font-size: 18px;
+}
+
+.foto1{
+    width: 35.3%;
+    height: 35.3%;
+    float: right;
+    margin-right: 6%;
 }
 
 .tabla2{
@@ -113,7 +66,46 @@ th{
     width: 39.8%;
 }
 
+/* ...............................................Formulario.........................................................*/
 .contactus{
     font-size: 18px;
     margin-left: 6%;
+}
+
+.formulario{
+    margin-left: 39%;
+}
+
+form{
+    width: 40%;
+    margin-left: 26.5%;
+}
+
+fieldset{
+    background-color: rgb(250, 207, 114);
+}
+
+.barra{
+    width: 70%;
+    height: 1.5px;
+    background-color: black;
+    margin-left: 15%;
+}
+
+/* ...............................................Pie de página.........................................................*/
+footer{
+    text-align: center;
+}
+
+.lista{
+    margin-left: 32%;   
+    display:flex;
+}
+
+.jefes{
+    margin-left: 13%;
+}
+
+ol{
+    list-style-type: none;
 }
