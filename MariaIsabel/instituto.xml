@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Requerimiento 1: --> 
-<!-- <?xml-stylesheet href="xslt_instituto.xsl" type="text/xsl"?> -->
+<?xml-stylesheet href="xslt_instituto.xsl" type="text/xsl"?> 
 
 <!-- Requerimiento 2: -->
-<?xml-stylesheet type="text/xsl" href="requerimiento2.xsl"?>
+<!--<?xml-stylesheet type="text/xsl" href="requerimiento2.xsl"?>-->
 <ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
     <empresa>Proeduca</empresa>
 
